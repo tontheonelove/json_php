@@ -5,6 +5,7 @@
     curl_close($ch);
     $json = json_decode($content, true);
     //print_R($json);
+    $small = substr($big, 0, 100);
     $count=count($json);
     echo'<th>เหรียญ</th><th>ราคาล่าสุด  (บาท)</th>';
     for($i=0;$i<$count;$i++)
