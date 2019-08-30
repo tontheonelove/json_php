@@ -7,9 +7,11 @@
     //print_R($json);
     $small = substr($big, 0, 100);
     $count=count($json);
+    echo'<table>
     echo'<th>เหรียญ</th><th>ราคาล่าสุด  (บาท)</th>';
     for($i=0;$i<$count;$i++)
     {
       echo'<tr><td>'.$json[$i]['secondary_currency'].'</td><td>'.$json[$i]['last_price'].'</td></tr>';
     }
+       echo'</table>;
 ?>
